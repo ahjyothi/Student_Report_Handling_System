@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+
+	<title>Student Report Handling System</title>
+
+	<link href="../css/app.css" rel="stylesheet">
+	<style>
+		.image-upload>input {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+					<span class="align-middle"><img src="../img/logo.png"></span>
+				</a>
+				<ul class="sidebar-nav">
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="ct-dashboard.html">
+							<i class="fa fa-home"></i> <span class="align-middle">Dashboard</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="ct-teachers.html">
+							<i class="fa fa-chalkboard-teacher"></i> <span class="align-middle">Teachers</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="ct-students.html">
+							<i class="fa fa-user"></i> <span class="align-middle">Students</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle d-flex">
+					<i class="hamburger align-self-center"></i>
+				</a>
+				<div class="col-auto d-none d-sm-block">
+					<h3><strong>Student Report Handling System</strong></h3>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#"
+								data-toggle="dropdown">
+								<i class="align-middle" data-feather="settings"></i>
+							</a>
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
+								data-toggle="dropdown">
+								<img src="../img/avatars/avatar-3.jpg" class="avatar img-fluid rounded mr-1"
+									alt="Charles Hall" /> <span class="text-dark">Class Teacher Name</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="ct-profile.html"><i class="align-middle mr-1"
+										data-feather="user"></i> Profile</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3">Profile</h1>
+
+					<div class="row">
+						<div class="col-md-4 col-xl-3">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h3 class="mb-0">Profile Details</h3>
+								</div>
+								<div class="card-body text-center">
+									<img src="../img/avatars/avatar-3.jpg" alt="Christina Mason"
+										class="../img-fluid rounded-circle mb-2" width="128" height="128" />
+									<h3 class="mb-0" style="color: black;">Teacher Name</h3>
+									<div class="text-muted mb-2">Class Teacher</div>
+									<form action="#" method="post">
+										<div class="mt-2 image-upload">
+											<label for="file-input">
+												<span class="btn btn-primary"><i class="fas fa-upload"></i>
+													Upload</span>
+											</label>
+											<input id="file-input" type="file" />
+										</div>
+								</div>
+								<button type="submit" class="btn btn-success">Submit</button>
+								</form>
+								<hr class="my-0" />
+							</div>
+						</div>
+
+						<div class="col-12 col-xl-9">
+							<div class="card">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Email Id</th>
+											<th>Phone Number</th>
+											<th>Class List</th>
+											<th>Subject List</th>
+											<th>Address</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Vanessa Tucker Tucker</td>
+											<td>Vanessaabcdffds.54548@gmail.com</td>
+											<td>9900879800</td>
+											<td><a href="#open-modal-editactive" class="status_btn">Class</a></td>
+											<td><a href="#open-modal-editactiveedit" class="status_btn">Subject</a></td>
+											<td>Gokula extension, Bangalore</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+
+			<div id="open-modal-editactive" class="modal-window">
+                <div>
+                    <a href="#modal-close-edit" title="Close" class="modal-close"> &times;</a>
+                    <div class="input-field-pop">
+                        <div class="white_box mb_30">
+                            <div class="box_header ">
+                                <div class="main-title">
+                                    <h3 class="mb-0">Add Class</h3>
+                                </div>
+                            </div>
+                        <label for="status"></label>
+                        <select name="isactive" id="isactive" class="form-control" required>
+                            <option value="1st Standard">1st Standard</option>
+                            <option value="2nd Standard">2nd Standard</option>
+                            <option value="3rd Standard">3rd Standard</option>
+                      </select>
+                        </div>
+                        <button class="btn btn-outline-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div id="open-modal-editactiveedit" class="modal-window">
+                <div>
+                    <a href="#modal-close-edit" title="Close" class="modal-close"> &times;</a>
+                    <div class="input-field-pop">
+                        <div class="white_box mb_30">
+                            <div class="box_header ">
+                                <div class="main-title">
+                                    <h3 class="mb-0">Add Subject</h3>
+                                </div>
+                            </div>
+                        <label for="status"></label>
+                        <select name="isactive" id="isactive" class="form-control" required>
+                            <option value="Maths">Maths</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Science">Science</option>
+                      </select>
+                        </div>
+                        <button class="btn btn-outline-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-left">
+							<p class="mb-0"><strong class="text-muted">2022 Designed and Developed under</strong> <i class="align-middle" data-feather="heart"></i>
+								<a href="https://www.nxtgio.com/" target="_blank" class="text-muted"><strong> nxtGIO Technologies LLP</strong></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="../js/app.js"></script>
+
+</body>
+
+</html>
